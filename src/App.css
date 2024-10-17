@@ -36,3 +36,115 @@
     transform: rotate(360deg);
   }
 }
+
+/* Button */
+.btn-primary {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+  background-color: #212121;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+section {
+  padding: 0px 100px;
+}
+.content {
+  margin-top: 85px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h1 {
+  color: #212121;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+p {
+  color: #212121;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #212121;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.btn-tertiary {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #5e5e5e;
+  border-radius: 12px;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-tertiary:hover {
+  background-color: #f8f8f8;
+  border-color: #d7d7d7;
+  transform: scale(1.05);
+}
