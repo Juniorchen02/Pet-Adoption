@@ -5,9 +5,7 @@ import Navbar from './components/NavBar';
 import AboutUs from './pages/About';
 import Home from './pages/Home';
 import Pets from './pages/Pets';
-import Service from './pages/ServicePage';
-
-
+import Service from './pages/Service';
 
 // Route part
 const App = () => {
