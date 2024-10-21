@@ -22,9 +22,9 @@ const Footer = () => {
                     <h3>Links <div className="underline"><span></span></div></h3>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/pets">Pets</Link></li>
                         <li><Link to="/service">Services</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/about">About</Link></li>
                     </ul>
                 </div>
                 <div className="footer-col">
@@ -33,7 +33,7 @@ const Footer = () => {
                         <i className="fab fa-facebook-f"></i>
                         <i className="fab fa-whatsapp"></i>
                         <i className="fab fa-pinterest"></i>
-                        <i className="fab fa-pinterest"></i>
+                        <i className="fab fa-twitter"></i>
                     </div>
                 </div>
             </div>
