@@ -1,5 +1,5 @@
 import "../styles/signin.css";
-function Login() {
+function SignIn() {
   return (
     <>
       <div className="Login">
@@ -22,7 +22,7 @@ function Login() {
             </button>
             <p className="signup-text">
               Belum punya akun?{" "}
-              <a href="/register" className="signup-link">
+              <a href="/signup" className="signup-link">
                 Daftar
               </a>
             </p>
@@ -32,4 +32,4 @@ function Login() {
     </>
   );
 }
-export default Login;
+export default SignIn;
