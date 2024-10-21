@@ -6,6 +6,8 @@ import AboutUs from './pages/About';
 import Home from './pages/Home';
 import Pets from './pages/Pets';
 import Service from './pages/ServicePage';
+import Login from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 
 
@@ -19,6 +21,8 @@ const App = () => {
                 <Route path="/pets" element={<Pets />} />
                 <Route path="/service" element={<Service />} />
                 <Route path="/about" element={<AboutUs />} />
+                <Route path="/signin" element={<Login />} />
+                <Route path="/signup" element={<SignUp />} />
             </Routes>
             <Footer />
         </Router>
