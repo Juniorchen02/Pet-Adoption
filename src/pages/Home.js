@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Gallery from './GalleryShow';
 import Owner from './Owner';
-import ServicePage from './ServicePage';
+import Service from './Service';
 import Testimoni from './Testimoni';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <div className="App">
             <Header />
             <Gallery />
-            <ServicePage />
+            <Service />
             <Owner />
             <Testimoni />
         </div>
