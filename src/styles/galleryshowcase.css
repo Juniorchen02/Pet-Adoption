@@ -84,31 +84,31 @@
 }
 
 .card-showcase[for="c1"] {
-    background-image: url(../images/cats.jpg);
+    background-image: url(/public/images/cats.jpg);
 }
 
 .card-showcase[for="c2"] {
-    background-image: url(../images/dog.jpg);
+    background-image: url(/public/images/dog.jpg);
 }
 
 .card-showcase[for="c3"] {
-    background-image: url(../images/bird.jpg);
+    background-image: url(/public/images/bird.jpg);
 }
 
 .card-showcase[for="c4"] {
-    background-image: url(../images/rabbit.jpg);
+    background-image: url(/public/images/rabbit.jpg);
 }
 
 .card-showcase[for="c5"] {
-    background-image: url(../images/hamster.jpg);
+    background-image: url(/public/images/hamster.jpg);
 }
 
 .card-showcase[for="c6"] {
-    background-image: url(../images/monkey.jpg);
+    background-image: url(/public/images/monkey.jpg);
 }
 
 .card-showcase[for="c7"] {
-    background-image: url(../images/squirrel.jpg);
+    background-image: url(/public/images/squirrel.jpg);
 }
 
 .h4-text-showcase {

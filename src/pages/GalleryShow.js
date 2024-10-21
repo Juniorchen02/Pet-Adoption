@@ -2,13 +2,13 @@ import React from 'react';
 import '../styles/galleryshowcase.css';
 
 const cardData = [
-    { id: 'c1', icon: '1', title: 'Cat', description: 'Cats are popular pets due to their independent and caring.' },
-    { id: 'c2', icon: '2', title: 'Dog', description: 'Dogs are extremely loyal and have unique characteristics.' },
-    { id: 'c3', icon: '3', title: 'Bird', description: 'Birds are cheerful and colorful pets.' },
-    { id: 'c4', icon: '4', title: 'Rabbit', description: 'Rabbits are gentle and social pets.', checked: true },
-    { id: 'c5', icon: '5', title: 'Hamster', description: 'Hamsters are cute little animals and love playing.' },
-    { id: 'c6', icon: '6', title: 'Monkey', description: 'Monkeys are intelligent and social animals.' },
-    { id: 'c7', icon: '7', title: 'Squirrel', description: 'Squirrels are small, agile and often seen in parks.' },
+    { id: 'c1', icon: '1', title: 'Winter', description: 'Winter has so much to offer' },
+    { id: 'c2', icon: '2', title: 'Winter', description: 'Winter has so much to offer' },
+    { id: 'c3', icon: '3', title: 'Winter', description: 'Winter has so much to offer' },
+    { id: 'c4', icon: '4', title: 'Winter', description: 'Winter has so much to offer', checked: true },
+    { id: 'c5', icon: '5', title: 'Winter', description: 'Winter has so much to offer' },
+    { id: 'c6', icon: '6', title: 'Winter', description: 'Winter has so much to offer' },
+    { id: 'c7', icon: '7', title: 'Winter', description: 'Winter has so much to offer' },
 ];
 
 const Gallery = () => {

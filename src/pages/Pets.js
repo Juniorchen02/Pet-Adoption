@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../styles/pets.css';
 import Filter from '../components/Filter';
 import PetList from '../components/PetList';
 import Search from '../components/Search';
+import '../styles/pets.css';
 
 // Data for the pets
 const petsData = [
