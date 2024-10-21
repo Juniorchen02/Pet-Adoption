@@ -5,15 +5,11 @@ import Navbar from './components/NavBar';
 import AboutUs from './pages/About';
 import Home from './pages/Home';
 import Pets from './pages/Pets';
-<<<<<<< HEAD
 import Service from './pages/ServicePage';
 import Login from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
 
-=======
-import Service from './pages/Service';
->>>>>>> e5f5482c48145a6c8c7e0359598f736fde03e1c2
 
 // Route part
 const App = () => {
