@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Gallery from './GalleryShow';
 import Owner from './Owner';
 import Service from './Service';
-import Testimoni from './Testimoni';
+import TestimonialSlider from './Testimoni';
 
 const Home = () => {
     return (
@@ -12,7 +12,7 @@ const Home = () => {
             <Gallery />
             <Service />
             <Owner />
-            <Testimoni />
+            <TestimonialSlider />
         </div>
     );
 };
