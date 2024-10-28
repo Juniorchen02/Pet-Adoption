@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/about.css';
-import TestimonialSlider from './Testimoni';
+import Team from './Team';
 
 const About = () => {
   return (
@@ -46,8 +46,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      
-      <TestimonialSlider />
+      < Team />
     </section>
     
     
