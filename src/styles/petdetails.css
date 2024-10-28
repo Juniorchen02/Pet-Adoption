@@ -1,0 +1,66 @@
+/* PetDetails.css */
+
+.pet-details {
+  max-width: 1200px; /* Mengatur lebar maksimum untuk keseluruhan komponen */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff; /* Ganti gradien dengan warna solid untuk keseragaman */
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  display: flex; /* Menjadikan komponen fleksibel */
+  flex-direction: column;
+}
+
+.details-container {
+  display: flex; /* Mengatur kontainer detail menjadi flex */
+  gap: 2rem; /* Jarak antara gambar dan informasi */
+}
+
+.pet-image {
+  width: 50%; /* Lebar gambar 50% dari kontainer */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+  flex: 1; /* Informasi mengambil sisa ruang yang tersedia */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal center */
+}
+
+.info-container h2 {
+  font-size: 2.5rem; /* Ukuran font lebih besar untuk judul */
+  margin: 1rem 0;
+  color: #4a7c2e; /* Warna hijau sesuai dengan tema service */
+  font-weight: bold; /* Menggunakan font weight lebih tebal */
+}
+
+.info-container p {
+  font-size: 1.2rem; /* Ukuran font lebih besar */
+  color: #575a7b;
+  line-height: 1.6;
+}
+
+.info-container button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem; /* Ruang dalam tombol */
+  margin-top: 1.5rem; /* Jarak atas tombol */
+  font-size: 1.2rem; /* Ukuran font */
+  color: white; /* Warna teks */
+  background-color: #4a7c2e; /* Warna hijau sesuai dengan tema */
+  border: none; /* Menghapus border default */
+  border-radius: 5px; /* Sudut melengkung */
+  cursor: pointer; /* Tangan saat hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transisi untuk efek hover */
+}
+
+.info-container button:hover {
+  background-color: #3f6a2a; /* Warna lebih gelap saat hover */
+  transform: scale(1.05); /* Sedikit memperbesar saat hover */
+}
+
+.info-container button:active {
+  transform: scale(0.95); /* Sedikit mengecil saat ditekan */
+}

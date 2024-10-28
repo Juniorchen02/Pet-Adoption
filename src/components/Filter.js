@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Filter = ({ selectedTypes, onFilterChange, onReset }) => {
-  const petTypes = ['Kucing', 'Anjing', 'Rabbit', 'Monkey'];
+  const petTypes = ['Anjing', 'Kelinci', 'Kucing', 'Monyet'];
 
   return (
     <div className="filter-container">
