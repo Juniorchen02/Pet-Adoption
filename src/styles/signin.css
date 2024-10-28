@@ -3,7 +3,7 @@
     
     justify-content: center;
     align-items: center;
-    background-image: url("/public/images/owner1.jpeg");
+    background-image: url("/public/images/owner1.jpg");
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -25,7 +25,7 @@
   }
   .login-title {
     color: var(--Darker---Grey, #212121);
-    font-family: "Plus Jakarta Sans";
+    font-family: "Poppins";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -55,7 +55,7 @@
   .forgot-password {
     color: var(--Darker---Grey, #212121);
     text-align: right;
-    font-family: "Plus Jakarta Sans";
+    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -74,7 +74,7 @@
   
   .signup-link {
     color: var(--Darker---Grey, #212121);
-    font-family: "Plus Jakarta Sans";
+    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;

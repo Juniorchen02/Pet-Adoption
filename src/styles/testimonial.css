@@ -3,6 +3,13 @@
     width: 100%;
     margin: auto;
   }
+
+  .testimonial-background {
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 50px 0;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  }
   
   .testimonial-wrapper {
     width: 100%;
@@ -15,7 +22,7 @@
   }
   
   .testimonial-title {
-    color: green;
+    color: white;
     margin-bottom: 30px;
     text-align: center;
     font-size: 32px;
@@ -73,6 +80,6 @@
   .testimonial-pagination .swiper-pagination-bullet {
     height: 12px;
     width: 12px;
-    background: green;
+    background: #032d17;
   }
   
