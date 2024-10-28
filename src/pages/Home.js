@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import Gallery from './GalleryShow';
-import Owner from './Owner';
 import Service from './Service';
+import Team from './Team';
 import TestimonialSlider from './Testimoni';
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
             <Header />
             <Gallery />
             <Service />
-            <Owner />
             <TestimonialSlider />
+            <Team />
         </div>
     );
 };
