@@ -2,13 +2,13 @@ import React from 'react';
 import '../styles/galleryshowcase.css';
 
 const cardData = [
-    { id: 'c1', icon: '1', title: 'Winter', description: 'Winter has so much to offer' },
-    { id: 'c2', icon: '2', title: 'Winter', description: 'Winter has so much to offer' },
-    { id: 'c3', icon: '3', title: 'Winter', description: 'Winter has so much to offer' },
-    { id: 'c4', icon: '4', title: 'Winter', description: 'Winter has so much to offer', checked: true },
-    { id: 'c5', icon: '5', title: 'Winter', description: 'Winter has so much to offer' },
-    { id: 'c6', icon: '6', title: 'Winter', description: 'Winter has so much to offer' },
-    { id: 'c7', icon: '7', title: 'Winter', description: 'Winter has so much to offer' },
+    { id: 'c1', icon: '1', title: 'Cat', description: 'Cats were the most adorable pets' },
+    { id: 'c2', icon: '2', title: 'Dog', description: 'Dogs will always recognize their owner' },
+    { id: 'c3', icon: '3', title: 'Bird', description: 'Bird always sing a song everyday' },
+    { id: 'c4', icon: '4', title: 'Rabbit', description: 'Rabbit is the most cute pet', checked: true },
+    { id: 'c5', icon: '5', title: 'Hamster', description: 'Small, agile and cute' },
+    { id: 'c6', icon: '6', title: 'Monkey', description: 'Monkeys are the smartest animal' },
+    { id: 'c7', icon: '7', title: 'Squirrel', description: 'Squirrel like to eat peanuts and jump' },
 ];
 
 const Gallery = () => {
