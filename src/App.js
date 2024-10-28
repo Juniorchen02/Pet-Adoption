@@ -5,11 +5,9 @@ import Navbar from './components/NavBar';
 import AboutUs from './pages/About';
 import Home from './pages/Home';
 import Pets from './pages/Pets';
-import Service from './pages/Service';
+import ServicePage from './pages/ServicePage';
 import Login from './pages/SignIn';
 import SignUp from './pages/SignUp';
-
-
 
 // Route part
 const App = () => {
@@ -19,7 +17,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/pets" element={<Pets />} />
-                <Route path="/service" element={<Service />} />
+                <Route path="/service" element={<ServicePage />} />
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/signin" element={<Login />} />
                 <Route path="/signup" element={<SignUp />} />
