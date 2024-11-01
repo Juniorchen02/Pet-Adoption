@@ -16,5 +16,6 @@ router.get('/users/:id', verifyUser, getUserById);
 router.post('/users/', createUser);
 router.patch('/users/:id', verifyUser,  updateUser);
 router.delete('/users/:id', verifyUser, deleteUser);
+router.delete('/users/:id', verifyUser, deleteUser);
 
 export default router;
