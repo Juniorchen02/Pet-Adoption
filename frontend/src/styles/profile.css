@@ -1,0 +1,83 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+  }
+  
+  .profile-card {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 700px;
+  }
+  
+  .profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-image img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #1976D2;
+    color: #1976D2;
+  }
+  
+  .profile-info {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .profile-info h2 {
+    font-size: 24px;
+    color: #4CAF50;
+  }
+  
+  .profile-info p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn.logout {
+    background-color: #f44336;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn.home {
+    background-color: #2196F3;
+  }
+  
+  .profile-card .btn.logout:hover {
+    background-color: #d32f2f;
+  }
+  
+  .profile-card .btn.home:hover {
+    background-color: #1976D2;
+  }
+  
