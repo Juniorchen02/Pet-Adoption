@@ -1,0 +1,90 @@
+[33mcommit 34cb0cd13cc0e5174f8faae924ca6c28bbc35902[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/juniorchen[m[33m, [m[1;32mjuniorchen[m[33m)[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 21 20:28:03 2024 +0700
+
+    update sign in, sign up, and pets page
+
+[33mcommit 5111a690d0ff33095ee260569b2a5c85d8c63183[m
+Merge: 12053b9 2cd933d
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 21 19:49:22 2024 +0700
+
+    Merge branch 'master' of https://github.com/Juniorchen02/Pet-Adoption into juniorchen
+
+[33mcommit 2cd933d56063bb4a93d0baf3236d28246140d787[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:15:20 2024 +0700
+
+    update and fixing
+
+[33mcommit 485de6e8ec47e6ade546290bd9182c66b5872f24[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:14:43 2024 +0700
+
+    Update the file and adding css
+
+[33mcommit b3f71a4540d4f0f3d47a33d45215ed5f3aa676ca[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:13:32 2024 +0700
+
+    Adding css for footer, header, navbar and gallery
+
+[33mcommit afe62b84fee52ad9140fc03e96806d123472f5cc[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:12:13 2024 +0700
+
+    adding Home pages
+
+[33mcommit bc4349f5a58baed7b7f2a6caa7927383fe40fb85[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:11:38 2024 +0700
+
+    add galleryshow for home pages
+
+[33mcommit cf426bcb96b2be8534e0b3fdcb230af89a4f52f2[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:09:25 2024 +0700
+
+    Make the needed file for pages
+
+[33mcommit bc7921de8cc2ab61e8cc921e0b358800afd7af7c[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:07:42 2024 +0700
+
+    wallpaper for header
+
+[33mcommit a4e99d8d3a64eafef01d15dee27f20c4bb153ee6[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:06:22 2024 +0700
+
+    Make the navbar design
+
+[33mcommit 12053b908b34e1f53aa932565e6f94a5eed7ad5a[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Thu Oct 17 20:06:04 2024 +0700
+
+    junior test
+
+[33mcommit 4aa58e5bb421614dfe7672af32fa6af608fbe809[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:05:38 2024 +0700
+
+    Header design
+
+[33mcommit 95551e77e4f212ee23acfeac7478cc34cdecd957[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:02:31 2024 +0700
+
+    footer design
+
+[33mcommit 1af01f5e8f299ad969de479189793bf383c23513[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 19:56:55 2024 +0700
+
+    Adding font-awesome dependency
+
+[33mcommit 2e7619d048186250c9742c88fe9cd95fd250359b[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Thu Oct 17 18:02:45 2024 +0700
+
+    Initialize project using Create React App

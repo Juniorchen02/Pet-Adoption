@@ -1,0 +1,54 @@
+// Create a User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Alfin1234test",
+    "email": "alfintest1234@gmail.com",
+    "password": "alfin123",
+    "confPassword": "alfin123",
+    "role": "user"
+}
+
+###
+// Get all Users
+GET http://localhost:5000/users
+
+###
+// Get Single User
+GET http://localhost:5000/users/8c48294d-a67d-4631-8b87-6a9c40b0a8ba
+
+###
+// Update a user
+PATCH http://localhost:5000/users/8c48294d-a67d-4631-8b87-6a9c40b0a8ba
+Content-Type: application/json
+
+{
+    "name": "Alfin123test Updated",
+    "email": "alfin123updated@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+###
+// Delete a user
+DELETE http://localhost:5000/users/4749ae03-44ca-4d57-9d4b-f5b8954b3963
+
+###
+// Login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "alfin123updated@gmail.com",
+    "password": "alfin123"
+}
+
+###
+// Current user
+GET http://localhost:5000/me
+
+### 
+// Log out
+DELETE http://localhost:5000/logout
