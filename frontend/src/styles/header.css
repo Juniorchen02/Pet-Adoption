@@ -29,7 +29,7 @@
 
 /* Header text styles */
 .h1-text {
-  color: rgb(132, 162, 21);
+  color: rgb(132 162 21); /* Fixed color notation */
   font-size: 19px;
   font-weight: bold;
 }

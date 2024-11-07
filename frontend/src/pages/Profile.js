@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import { useHistory } from 'react-router-dom'; // for navigation
 import '../styles/profile.css'
 
 const Profile = () => {
   const [user, setUser] = useState(null)
   const [message, setMessage] = useState('')
+  const history = useHistory() // useHistory hook for redirection
 
   useEffect(() => {
     const fetchUser = async () => {
       try {
         const response = await fetch('http://localhost:5000/me', {
-          credentials: 'include'
+          credentials: 'include',
         })
 
         if (response.ok) {
@@ -33,12 +35,12 @@ const Profile = () => {
     try {
       const response = await fetch('http://localhost:5000/logout', {
         method: 'DELETE',
-        credentials: 'include'
+        credentials: 'include',
       })
 
       if (response.ok) {
         setUser(null)
-        window.location.href = '/signin'
+        history.push('/signin') // Using react-router for navigation
       } else {
         setMessage('Logout failed. Please try again.')
       }
@@ -48,6 +50,7 @@ const Profile = () => {
     }
   }
 
+  // Handle loading and message states
   if (message) {
     return <p>{message}</p>
   }
@@ -63,7 +66,7 @@ const Profile = () => {
         <p><strong>Username:</strong> {user.name}</p>
         <p><strong>Email:</strong> {user.email}</p>
         <button className='btn logout' onClick={handleLogout}>Logout</button>
-        <button className='btn home' onClick={() => window.location.href = '/'}>Home</button>
+        <button className='btn home' onClick={() => history.push('/')}>Home</button> {/* React-router for redirection */}
       </div>
     </div>
   )

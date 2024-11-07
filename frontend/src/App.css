@@ -150,3 +150,24 @@ p {
   border-color: #d7d7d7;
   transform: scale(1.05);
 }
+
+/* Fixed formatting issues */
+.app-header {
+  /* Empty line before the rule */
+  margin-top: 20px;
+}
+
+section {
+  padding: 0 100px;
+}
+
+.content {
+  margin-top: 85px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+

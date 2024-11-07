@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif; /* Tambahkan generic family */
+  font-family: Poppins, sans-serif; /* Removed unnecessary quotes */
 }
 
 .logo {
@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff; /* Gunakan shorthand hex (#fff) */
+  background-color: #fff; /* shorthand hex color */
   padding: 2% 5%;
 }
 
@@ -66,14 +66,14 @@ nav ul li a.active {
 
 .btn-primary,
 .btn-secondary {
-  font-family: "Poppins", sans-serif; /* Tambahkan generic family */
+  font-family: Poppins, sans-serif; /* Removed unnecessary quotes */
   width: 150px;
   text-align: center;
   font-size: 16px;
   padding: 12px 16px;
   border-radius: 12px;
   border: 0;
-  color: #fff; /* Gunakan shorthand hex (#fff) */
+  color: #fff; /* shorthand hex color */
   background-color: #5ace56;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }

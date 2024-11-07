@@ -24,7 +24,7 @@ footer {
 }
 
 .footer-h1 {
-  color: rgb(132, 162, 21);
+  color: rgb(132 162 21); /* Modern color notation */
 }
 
 .footer-row {

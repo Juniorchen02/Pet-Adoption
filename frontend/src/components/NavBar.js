@@ -70,11 +70,18 @@ const Navbar = () => {
             </NavLink>
           </li>
           {isLoggedIn ? (
-            <li>
-              <NavLink to='/profile'>
-                <button className='btn-primary'>Profile</button>
-              </NavLink>
-            </li>
+            <>
+              <li>
+                <NavLink to='/profile'>
+                  <button className='btn-primary'>Profile</button>
+                </NavLink>
+              </li>
+              <li>
+                <button onClick={handleLogout} className='btn-secondary'>
+                  Logout
+                </button>
+              </li>
+            </>
           ) : (
             <>
               <li>

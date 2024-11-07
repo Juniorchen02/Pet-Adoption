@@ -1,6 +1,3 @@
-/* Corrected CSS for the About page */
-
-/* Section container styling */
 .section-container {
   max-width: var(--max-width);
   padding: 0;
@@ -9,7 +6,7 @@
 
 /* Section header styling */
 .section-header {
-  font-size: 32px; /* Removed duplicate font-size declaration */
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   line-height: 3.5rem;
@@ -35,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 65%;
-  background-color: rgb(253, 242, 217); /* Modern color notation */
+  background-color: rgb(253 242 217);
   z-index: -1;
 }
 
@@ -95,7 +92,7 @@
 
 /* Background color adjustments for specific rows */
 .about-row:nth-child(3) .about-content span {
-  background-color: rgb(253, 242, 217); /* Modern color notation */
+  background-color: rgb(253 242 217);
 }
 
 .about-row:nth-child(4) .about-content span {
@@ -114,7 +111,7 @@
   line-height: 3rem;
   font-size: 20px;
   font-weight: 600;
-  color: rgb(132, 162, 21);
+  color: rgb(132 162 21);
 }
 
 /* Paragraph styling */

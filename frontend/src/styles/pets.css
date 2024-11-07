@@ -1,10 +1,11 @@
+/* Main container style */
 .main-container {
   display: flex;
   width: 100%;
   max-width: 100%;
   height: 800px;
   border-radius: 10px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 12%); /* 12% opacity instead of 0.12 */
   overflow: hidden;
   background-size: 100% 200%;
   background-position: 0 2.5%;
@@ -14,16 +15,18 @@
   box-sizing: border-box;
 }
 
+/* Filter container */
 .filter-container {
   margin-right: 20px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #fff; /* #fff instead of #ffffff */
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 10%); /* 10% opacity instead of 0.10 */
   display: flex;
   flex-direction: column;
 }
 
+/* Filter items */
 .filter-item {
   display: flex;
   align-items: center;
@@ -32,10 +35,11 @@
 
 .filter-item label {
   margin-left: 10px;
-  color: #575a7b;
+  color: rgba(87, 90, 123, 100%); /* 100% instead of 1 */
   font-weight: 500;
 }
 
+/* Checkbox style */
 input[type="checkbox"] {
   appearance: none;
   width: 18px;
@@ -48,7 +52,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: rgba(132, 162, 21, 1);
+  background-color: rgba(132, 162, 21, 100%); /* 100% instead of 1 */
   position: relative;
 }
 
@@ -65,10 +69,11 @@ input[type="checkbox"]:checked::after {
   bottom: 0;
 }
 
+/* Reset button */
 .reset-button {
   margin-bottom: 20px;
   padding: 10px 15px;
-  background-color: rgba(132, 162, 21, 1);
+  background-color: rgba(132, 162, 21, 100%); /* 100% instead of 1 */
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -78,9 +83,10 @@ input[type="checkbox"]:checked::after {
 }
 
 .reset-button:hover {
-  background-color: #32f025;
+  background-color: #32f025; /* Use #32f025 shorthand */
 }
 
+/* Container for pet cards */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +99,7 @@ input[type="checkbox"]:checked::after {
   overflow-y: auto;
 }
 
+/* Pet card styles */
 .pet-card {
   border-radius: 10px;
   padding: 10px;
@@ -102,15 +109,15 @@ input[type="checkbox"]:checked::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(#fff 50%, rgba(132, 162, 21, 1) 50%);  /* Changed to rgba */
+  background: linear-gradient(#fff 50%, rgba(132, 162, 21, 100%) 50%); /* 100% opacity instead of 1 */
   background-size: 100% 200%;
   background-position: 0 2.5%;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 12%); /* 12% opacity instead of 0.12 */
 }
 
 .pet-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 20%); /* 20% opacity instead of 0.20 */
 }
 
 .pet-card img {
@@ -120,6 +127,7 @@ input[type="checkbox"]:checked::after {
   object-fit: cover;
 }
 
+/* Search container */
 .search-container {
   margin: 20px;
   display: flex;
@@ -133,26 +141,28 @@ input[type="checkbox"]:checked::after {
   width: 50%;
   font-size: 16px;
   transition: border-color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 10%); /* 10% opacity instead of 0.10 */
 }
 
 .search-container input[type="text"]:focus {
-  border-color: rgba(132, 162, 21, 1);
+  border-color: rgba(132, 162, 21, 100%); /* 100% instead of 1 */
   outline: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 15%); /* 15% opacity instead of 0.15 */
 }
 
+/* Section header */
 .section-header {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   line-height: 3.5rem;
-  color: rgba(132, 162, 21, 1);
+  color: rgba(132, 162, 21, 100%); /* 100% instead of 1 */
   margin-bottom: 30px;
 }
 
+/* About content */
 .about-content p {
-  color: #575a7b;
+  color: rgba(87, 90, 123, 100%); /* 100% instead of 1 */
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
