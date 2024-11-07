@@ -14,9 +14,10 @@ dotenv.config()
 
 const app = express()
 
-const sessionStore = SequelizeStore(session.Store)
+// Fix the new-cap error by renaming `sessionStore` to `SessionStore`
+const SessionStore = SequelizeStore(session.Store)
 
-const store = new sessionStore({
+const store = new SessionStore({
   db: db
 })
 
