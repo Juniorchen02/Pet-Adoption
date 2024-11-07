@@ -82,7 +82,8 @@ const Navbar = () => {
             </NavLink>
           </li>
           {isLoggedIn
-          ? (
+            ?
+            (
             <>
               <li>
                 <NavLink to='/profile'>
@@ -107,7 +108,7 @@ const Navbar = () => {
                   <button className='btn-secondary'>Login</button>
                 </NavLink>
               </li>
-            </>
+                </>
           )}
         </ul>
       </div>

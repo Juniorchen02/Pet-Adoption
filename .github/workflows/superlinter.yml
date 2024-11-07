@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 ---
 name: Super-Linter
+=======
+# NOTE: This would need to be in the root of the repo to use it
+>>>>>>> 952346e2bb88c662a700b2fbd189b0511d1cd7ab
 
-on: push
 
+<<<<<<< HEAD
 jobs:
   super-lint:
     name: Lint code base
@@ -10,9 +14,37 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+=======
+name: Lint Code Base
 
-      - name: Run Super-Linter
+on:
+  push:
+    branches: [ "master" ]
+    
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+>>>>>>> 952346e2bb88c662a700b2fbd189b0511d1cd7ab
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: Lint Code Base
         uses: github/super-linter@v4
         env:
+<<<<<<< HEAD
           DEFAULT_BRANCH: alfin
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+=======
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+>>>>>>> 952346e2bb88c662a700b2fbd189b0511d1cd7ab
