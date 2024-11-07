@@ -14,5 +14,5 @@ jobs:
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: alfin
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
