@@ -11,7 +11,7 @@ const Navbar = () => {
       try {
         const response = await fetch('http://localhost:5000/me', {
           method: 'GET',
-          credentials: 'include',
+          credentials: 'include'
         })
 
         if (response.ok) {
@@ -34,7 +34,7 @@ const Navbar = () => {
     try {
       await fetch('http://localhost:5000/logout', {
         method: 'POST',
-        credentials: 'include',
+        credentials: 'include'
       })
       setIsLoggedIn(false)
       setUsername('')
@@ -45,13 +45,13 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar">
-      <h1 className="logo">Adopet</h1>
-      <div className="nav-links">
+    <nav className='navbar'>
+      <h1 className='logo'>Adopet</h1>
+      <div className='nav-links'>
         <ul>
           <li>
             <NavLink
-              to="/"
+              to='/'
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Home
@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/pets"
+              to='/pets'
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Pets
@@ -67,7 +67,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/service"
+              to='/service'
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               Service
@@ -75,21 +75,22 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to='/about'
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               About Us
             </NavLink>
           </li>
-          {isLoggedIn ? (
+          {isLoggedIn
+          ? (
             <>
               <li>
-                <NavLink to="/profile">
-                  <button className="btn-primary">Profile</button>
+                <NavLink to='/profile'>
+                  <button className='btn-primary'>Profile</button>
                 </NavLink>
               </li>
               <li>
-                <button onClick={handleLogout} className="btn-secondary">
+                <button onClick={handleLogout} className='btn-secondary'>
                   Logout
                 </button>
               </li>
@@ -97,13 +98,13 @@ const Navbar = () => {
           ) : (
             <>
               <li>
-                <NavLink to="/signup">
-                  <button className="btn-primary">Register</button>
+                <NavLink to='/signup'>
+                  <button className='btn-primary'>Register</button>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/signin">
-                  <button className="btn-secondary">Login</button>
+                <NavLink to='/signin'>
+                  <button className='btn-secondary'>Login</button>
                 </NavLink>
               </li>
             </>

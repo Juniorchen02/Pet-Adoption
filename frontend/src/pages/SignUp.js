@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../styles/signup.css'
 
-function SignUp() {
+function SignUp () {
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -51,51 +51,51 @@ function SignUp() {
   }
 
   return (
-    <div className="register">
-      <div className="card-register">
-        <h2 className="register-title">Sign Up</h2>
-        <form className="register-form" onSubmit={handleRegister}>
-          <div className="form-group">
-            <label htmlFor="username">Username</label>
+    <div className='register'>
+      <div className='card-register'>
+        <h2 className='register-title'>Sign Up</h2>
+        <form className='register-form' onSubmit={handleRegister}>
+          <div className='form-group'>
+            <label htmlFor='username'>Username</label>
             <input
-              type="text"
-              id="username"
+              type='text'
+              id='username'
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
+          <div className='form-group'>
+            <label htmlFor='email'>Email</label>
             <input
-              type="email"
-              id="email"
+              type='email'
+              id='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
+          <div className='form-group'>
+            <label htmlFor='password'>Password</label>
             <input
-              type="password"
-              id="password"
+              type='password'
+              id='password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="confirm-password">Confirm Password</label>
+          <div className='form-group'>
+            <label htmlFor='confirm-password'>Confirm Password</label>
             <input
-              type="password"
-              id="confirm-password"
+              type='password'
+              id='confirm-password'
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
           </div>
-          <button type="submit">Sign Up</button>
+          <button type='submit'>Sign Up</button>
         </form>
         {message && (
           <p className={isSuccess ? 'success' : 'error'}>{message}</p>

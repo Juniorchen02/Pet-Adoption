@@ -7,7 +7,7 @@ import TestimonialSlider from './Testimoni'
 
 const Home = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Gallery />
       <Service />

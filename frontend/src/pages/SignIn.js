@@ -15,10 +15,10 @@ function SignIn() {
       const response = await fetch('http://localhost:5000/login', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({ email, password }),
-        credentials: 'include',
+        credentials: 'include'
       })
 
       const data = await response.json()
@@ -36,40 +36,40 @@ function SignIn() {
   }
 
   return (
-    <div className="login">
-      <div className="card-login">
-        <h2 className="login-title">Sign In</h2>
-        <form className="login-form" onSubmit={handleLogin}>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
+    <div className='login'>
+      <div className='card-login'>
+        <h2 className='login-title'>Sign In</h2>
+        <form className='login-form' onSubmit={handleLogin}>
+          <div className='form-group'>
+            <label htmlFor='email'>Email</label>
             <input
-              type="email"
-              id="email"
+              type='email'
+              id='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="password">Password</label>
+          <div className='form-group'>
+            <label htmlFor='password'>Password</label>
             <input
-              type="password"
-              id="password"
+              type='password'
+              id='password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
-          <a href="#" className="forgot-password">
+          <a href='#' className='forgot-password'>
             Forgot Password?
           </a>
-          <button type="submit" className="btn-primary">
+          <button type='submit' className='btn-primary'>
             Sign In
           </button>
-          {message && <p className="message">{message}</p>}
-          <p className="signup-text">
+          {message && <p className='message'>{message}</p>}
+          <p className='signup-text'>
             Don't have an account?{' '}
-            <a href="/signup" className="signup-link">
+            <a href='/signup' className='signup-link'>
               Sign Up
             </a>
           </p>

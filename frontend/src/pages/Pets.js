@@ -13,7 +13,7 @@ const petsData = [
     image: '/images/cat.jpg',
     age: 2,
     weight: '4 kg',
-    location: 'Medan',
+    location: 'Medan'
   },
   {
     type: 'Kucing',
@@ -22,7 +22,7 @@ const petsData = [
     image: '/images/cat/cat2.jpeg',
     age: 1,
     weight: '3.5 kg',
-    location: 'Jakarta',
+    location: 'Jakarta'
   },
   {
     type: 'Anjing',
@@ -31,7 +31,7 @@ const petsData = [
     image: '/images/dog/dog.jpeg',
     age: 3,
     weight: '10 kg',
-    location: 'Surabaya',
+    location: 'Surabaya'
   },
   {
     type: 'Anjing',
@@ -40,7 +40,7 @@ const petsData = [
     image: '/images/dog/dog2.jpeg',
     age: 4,
     weight: '12 kg',
-    location: 'Bandung',
+    location: 'Bandung'
   },
   {
     type: 'Anjing',
@@ -49,7 +49,7 @@ const petsData = [
     image: '/images/dog/dog3.jpeg',
     age: 2,
     weight: '5 kg',
-    location: 'Yogyakarta',
+    location: 'Yogyakarta'
   },
   {
     type: 'Kelinci',
@@ -58,7 +58,7 @@ const petsData = [
     image: '/images/rabbit/rabbit.jpeg',
     age: 1,
     weight: '1 kg',
-    location: 'Malang',
+    location: 'Malang'
   },
   {
     type: 'Kelinci',
@@ -67,7 +67,7 @@ const petsData = [
     image: '/images/rabbit/rabbit2.jpeg',
     age: 2,
     weight: '1.5 kg',
-    location: 'Semarang',
+    location: 'Semarang'
   },
   {
     type: 'Monyet',
@@ -76,7 +76,7 @@ const petsData = [
     image: '/images/monkey/monkey.jpeg',
     age: 5,
     weight: '8 kg',
-    location: 'Bali',
+    location: 'Bali'
   },
   {
     type: 'Monyet',
@@ -85,11 +85,11 @@ const petsData = [
     image: '/images/monkey/monkey2.jpeg',
     age: 4,
     weight: '7 kg',
-    location: 'Lombok',
-  },
+    location: 'Lombok'
+  }
 ]
 
-function Pets() {
+function Pets () {
   const [searchTerm, setSearchTerm] = useState('')
   const [filteredTypes, setFilteredTypes] = useState([])
   const navigate = useNavigate()
@@ -126,15 +126,15 @@ function Pets() {
       <Search
         searchTerm={searchTerm}
         onSearchChange={handleSearchChange}
-        className="search-bar"
+        className='search-bar'
       />
-      <div className="main-container">
+      <div className='main-container'>
         <Filter
           selectedTypes={filteredTypes}
           onFilterChange={handleFilterChange}
           onReset={resetFilters}
         />
-        <div className="pet-list">
+        <div className='pet-list'>
           <PetList pets={filteredPets} onPetClick={handlePetClick} />
         </div>
       </div>
