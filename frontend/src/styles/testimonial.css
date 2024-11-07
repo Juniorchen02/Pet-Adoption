@@ -9,17 +9,17 @@
   background-color: yellowgreen;
   padding: 50px 0;
   clip-path:
-  
-  polygon(
-    20% 0%,
-    80% 0%,
-    100% 20%,
-    100% 80%,
-    80% 100%,
-    20% 100%,
-    0% 80%,
-    0% 20%
-  );
+
+    polygon(
+      20% 0%,
+      80% 0%,
+      100% 20%,
+      100% 80%,
+      80% 100%,
+      20% 100%,
+      0% 80%,
+      0% 20%
+    );
 }
 
 .testimonial-wrapper {
