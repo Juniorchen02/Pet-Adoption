@@ -111,9 +111,10 @@ input[type="checkbox"]:checked::after {
   justify-content: space-between;
   background: 
     linear-gradient(
-    #fff 0.5,
-    rgba(132 162 21 / 100%) 0.5
+      #fff 0.5,
+      rgba(132 162 21 / 100%) 0.5
   );
+  
   /* 100% opacity instead of 1 */
   background-size: 100% 200%;
   background-position: 0 2.5%;
