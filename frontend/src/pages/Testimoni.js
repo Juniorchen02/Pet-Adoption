@@ -36,8 +36,9 @@ const testimonials = [
 
 const TestimonialSlider = () => {
   useEffect(() => {
-    const Swiper = window.Swiper
-    const swiperInstance = new Swiper('.testimonial-slider', {
+    const { Swiper } = window // Accessing Swiper from the window object directly
+
+    const swiper = new Swiper('.testimonial-slider', { // Initialize swiper directly
       grabCursor: true,
       slidesPerView: 2,
       spaceBetween: 30,
@@ -49,7 +50,10 @@ const TestimonialSlider = () => {
         delay: 2000
       }
     })
-  }, [])
+
+    // Optional: Cleanup function to destroy the swiper instance when the component unmounts
+    return () => swiper.destroy()
+  }, []) // Empty dependency array to run this effect only once
 
   return (
     <div className='testimonial-background'>
