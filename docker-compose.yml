@@ -22,7 +22,7 @@ services:
   
   # Backend Service
   backend:
-    image: juniorchen02/testing:backend_1.0.0
+    image: juniorchen02/adopet:backend_1.0.0
     container_name: backend
     build:
       context: ./backend
@@ -43,7 +43,7 @@ services:
   
   # Frontend Service
   frontend:
-    image: juniorchen02/testing:frontend_1.0.0
+    image: juniorchen02/adopet:frontend_1.0.0
     container_name: frontend
     build:
       context: ./frontend
