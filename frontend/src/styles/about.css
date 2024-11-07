@@ -1,46 +1,53 @@
-.section__container {
+/* Corrected CSS for the About page */
+
+/* Section container styling */
+.section-container {
   max-width: var(--max-width);
   padding: 0;
   margin: auto;
 }
 
-.section__header {
-  font-size: 2.5rem;
+/* Section header styling */
+.section-header {
+  font-size: 32px; /* Removed duplicate font-size declaration */
   font-weight: bold;
   text-align: center;
   line-height: 3.5rem;
   color: green;
-  font-size: 32px;
 }
 
-.owner-img{
+/* Owner image styling */
+.owner-img {
   display: flex;
   width: 100%;
 }
 
-.owner{
+.owner {
   position: relative;
   isolation: isolate;
 }
 
-.owner::before{
+/* Before pseudo-element for owner */
+.owner::before {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 65%;
-  background-color: #fdf2d9;
+  background-color: rgb(253, 242, 217); /* Modern color notation */
   z-index: -1;
 }
 
+/* About image styling */
 .about-img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.about__row {
+/* Row for the About section */
+.about-row {
   margin-top: 2rem;
   display: flex;
   gap: 2rem;
@@ -49,22 +56,25 @@
   padding-bottom: 20px;
 }
 
-.about__row:nth-child(3) {
+.about-row:nth-child(3) {
   margin-top: 4rem;
 }
 
-.about__image {
+/* About image inside rows */
+.about-image {
   flex: 1;
   width: 100%;
   margin-inline: auto;
 }
 
-.about__content {
+/* About content inside rows */
+.about-content {
   flex: 1;
   text-align: center;
 }
 
-.about__content span {
+/* Span inside content for circular image */
+.about-content span {
   margin-inline: auto;
   margin-bottom: 1rem;
   width: 80px;
@@ -77,25 +87,27 @@
   background-color: #f0f0f0;
 }
 
-.about__content span img {
+.about-content span img {
   width: 60%;
   height: 60%;
   object-fit: contain;
 }
 
-.about__row:nth-child(3) .about__content span {
-  background-color: #fdf2d9;
+/* Background color adjustments for specific rows */
+.about-row:nth-child(3) .about-content span {
+  background-color: rgb(253, 242, 217); /* Modern color notation */
 }
 
-.about__row:nth-child(4) .about__content span {
+.about-row:nth-child(4) .about-content span {
   background-color: #e8f7fe;
 }
 
-.about__row:nth-child(5) .about__content span {
+.about-row:nth-child(5) .about-content span {
   background-color: #fbebf1;
 }
 
-.about__content-h4 {
+/* H4 content styling */
+.about-content-h4 {
   max-width: 450px;
   margin-inline: auto;
   margin-bottom: 1rem;
@@ -105,32 +117,33 @@
   color: rgb(132, 162, 21);
 }
 
-.about__content p {
+/* Paragraph styling */
+.about-content p {
   max-width: 450px;
   margin-inline: auto;
-  color:#575a7b;
+  color: #575a7b;
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
+/* Media query for larger screens */
 @media (width > 768px) {
-  .about__row {
+  .about-row {
     flex-direction: row;
     align-items: center;
   }
 
-  .about__row:nth-child(4) {
+  .about-row:nth-child(4) {
     flex-direction: row-reverse;
   }
 
-  .about__image {
+  .about-image {
     max-width: unset;
     margin-inline: auto;
   }
 
-  .about__content {
+  .about-content {
     text-align: left;
   }
-
 }

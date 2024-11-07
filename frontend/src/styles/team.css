@@ -1,22 +1,22 @@
 .team-home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    padding: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 20px;
+}
 
 .team-container {
-    text-align: center;
-    padding-top: 20px;
-  }
+  text-align: center;
+  padding-top: 20px;
+}
 
 .team-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: green;
-    text-align: center;
-  }
+  font-size: 32px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
 
 .team-profile-card {
   position: relative;
@@ -25,7 +25,7 @@
   background-color: goldenrod;
   padding: 30px;
   border-radius: 50%;
-  box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+  box-shadow: -5px 8px 45px rgba(51, 51, 51, 12.6%);
   transition: all 0.4s;
   margin: 0 20px;
 }
@@ -70,7 +70,7 @@
 
 .team-caption h3 {
   font-size: 21px;
-  color: #ffffff;
+  color: #fff; /* shorthand hex color */
   font-weight: 600;
 }
 

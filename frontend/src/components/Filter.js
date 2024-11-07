@@ -1,8 +1,7 @@
-// Filter.js
-import React from 'react';
+import React from 'react'
 
 const Filter = ({ selectedTypes, onFilterChange, onReset }) => {
-  const petTypes = ['Anjing', 'Kelinci', 'Kucing', 'Monyet'];
+  const petTypes = ['Anjing', 'Kelinci', 'Kucing', 'Monyet']
 
   return (
     <div className="filter-container">
@@ -19,9 +18,11 @@ const Filter = ({ selectedTypes, onFilterChange, onReset }) => {
           <label htmlFor={type}>{type}</label>
         </div>
       ))}
-      <button className="reset-button" onClick={onReset}>Reset</button>
+      <button className="reset-button" onClick={onReset}>
+        Reset
+      </button>
     </div>
-  );
-};
+  )
+}
 
-export default Filter;
+export default Filter

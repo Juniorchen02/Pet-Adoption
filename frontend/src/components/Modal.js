@@ -1,22 +1,25 @@
-// Modal.js
-import React, { useState } from 'react';
-import '../styles/modal.css'; // Tambahkan gaya untuk modal
+import React, { useEffect, useState } from 'react';
+import '../styles/modal.css';
 
 const Modal = ({ isOpen, onClose }) => {
     const [showNotification, setShowNotification] = useState(false);
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default form submission behavior
+        e.preventDefault();
 
-        // Show the notification modal
         setShowNotification(true);
-
-        // Close the booking modal and notification after 3 seconds
-        setTimeout(() => {
-            setShowNotification(false);
-            onClose(); // Close the booking modal
-        }, 3000);
     };
+
+    useEffect(() => {
+        let timer;
+        if (showNotification) {
+            timer = setTimeout(() => {
+                setShowNotification(false);
+                onClose();
+            }, 3000);
+        }
+        return () => clearTimeout(timer);
+    }, [showNotification, onClose]);
 
     if (!isOpen) return null;
 
@@ -53,8 +56,6 @@ const Modal = ({ isOpen, onClose }) => {
                     </div>
                 </form>
             </div>
-
-            {/* Notification modal */}
             {showNotification && (
                 <div className="notification-overlay">
                     <div className="notification-content">

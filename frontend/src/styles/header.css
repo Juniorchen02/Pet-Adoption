@@ -1,13 +1,15 @@
-.header{
+/* Header section styles */
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(/public/images/cat.jpg);
+    background-image: url('/public/images/cat.jpg'); /* Added quotes around the URL */
     background-position: center;
     background-size: cover;
     position: relative;
 }
-
-.button-header{
+  
+  /* Button styles */
+.button-header {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -20,18 +22,20 @@
     cursor: pointer;
     transition: 0.5s;
 }
-
-.button-header:hover{
+  
+.button-header:hover {
     background: #e3b6b6;
 }
-
-.h1-text{
+  
+  /* Header text styles */
+.h1-text {
     color: rgb(132, 162, 21);
     font-size: 19px;
     font-weight: bold;
 }
-
-.text-box{
+  
+/* Text box container */
+.text-box {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -39,15 +43,14 @@
     text-align: center;
     color: #fff;
 }
-
-.text-box h1{
+  
+.text-box h1 {
     font-size: 50px;
     margin-top: 110px;
 }
-
-.text-box p{
+  
+.text-box p {
     margin: 10px auto;
     font-weight: 100;
 }
-
-
+  
