@@ -1,6 +1,6 @@
 
 export const getProducts = (req, res) => {
-
+    console.log("test");
 }
 
 export const getProductById = (req, res) => {
