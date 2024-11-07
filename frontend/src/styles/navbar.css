@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif; /* Tambahkan generic family */
 }
 
 .logo {
@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff; /* Gunakan shorthand hex (#fff) */
   padding: 2% 5%;
 }
 
@@ -64,15 +64,16 @@ nav ul li a.active {
   color: #34fa02;
 }
 
-.btn-primary, .btn-secondary {
-  font-family: Poppins;
+.btn-primary,
+.btn-secondary {
+  font-family: "Poppins", sans-serif; /* Tambahkan generic family */
   width: 150px;
   text-align: center;
   font-size: 16px;
   padding: 12px 16px;
   border-radius: 12px;
   border: 0;
-  color: #ffffff;
+  color: #fff; /* Gunakan shorthand hex (#fff) */
   background-color: #5ace56;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
