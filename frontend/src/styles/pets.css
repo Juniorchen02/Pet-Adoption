@@ -109,12 +109,16 @@ input[type="checkbox"]:checked::after {
   height: 300px;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: 
+    column;
   justify-content: space-between;
-  background: linear-gradient(#ffffff 50%, rgb(132, 162, 21) 50%);
+  background: 
+    linear-gradient(#ffffff 50%, rgb(132, 162, 21) 50%);
   background-size: 100% 200%;
-  background-position: 0 2.5%;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    background-position: 
+      0 2.5%;
+  box-shadow: 
+    0 0 35px rgba(0, 0, 0, 0.12);
 }
 
 .pet-card:hover {
