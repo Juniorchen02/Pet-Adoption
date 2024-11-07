@@ -39,7 +39,7 @@ const Products = db.define(
       validate: {
         notEmpty: true
       }
-    },
+    }
   },
   {
     freezeTableName: true
