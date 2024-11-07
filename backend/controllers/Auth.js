@@ -37,4 +37,6 @@ export const logOut = (req, res) =>{
         if(err) return res.status(400).json({msg: "Error occured"});
         res.status(200).json({msg: "Logout sucessfully"});
     });
+
+    console.log("test");
 }

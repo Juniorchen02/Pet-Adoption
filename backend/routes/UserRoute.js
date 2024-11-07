@@ -7,7 +7,7 @@ import {
     updateUser
 } from "../controllers/Users.js";
 import { verifyUser } from "../middleware/AuthUser.js";
-
+ 
 const router = express.Router();
 
 router.get('/users', verifyUser, getUsers);

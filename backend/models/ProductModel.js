@@ -4,6 +4,8 @@ import Users from "./UsersModel.js";
 
 const {DataTypes} = Sequelize;
 
+console.log("test");
+
 const Products = db.define('product', {
     uuid:{
         type: DataTypes.STRING,

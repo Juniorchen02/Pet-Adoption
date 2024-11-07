@@ -99,4 +99,6 @@ export const deleteUser = async(req, res) =>{
         console.error(error); // Log error untuk debugging
         res.status(400).json({ msg: error.message });
     }
+
+    console.log("test");
 }

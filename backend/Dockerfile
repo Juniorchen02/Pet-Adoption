@@ -18,3 +18,4 @@ EXPOSE 5000
 
 # Jalankan backend
 CMD ["node", "index.js"]
+ 

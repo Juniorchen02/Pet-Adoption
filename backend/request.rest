@@ -31,6 +31,8 @@ Content-Type: application/json
     "role": "user"
 }
 
+ 
+
 ###
 // Delete a user
 DELETE http://localhost:5000/users/4749ae03-44ca-4d57-9d4b-f5b8954b3963

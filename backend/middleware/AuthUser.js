@@ -13,6 +13,7 @@ export const verifyUser = async (req, res, next) => {
 
     if (!user) {
         return res.status(404).json({ msg: "User not found" });
+        console.log("test");
     }
 
     req.userId = user.id;
