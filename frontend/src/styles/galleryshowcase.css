@@ -37,7 +37,7 @@
   display: flex;
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 80%);
 }
 
 /* Row inside the showcase card */
@@ -69,8 +69,7 @@
   width: 520px;
   opacity: 0;
   transform: translateY(30px);
-  transition-delay: 0.3s;
-  transition: all 0.3s ease;
+  transition-delay: all 0.3s ease;
 }
 
 /* Paragraph text inside description */
