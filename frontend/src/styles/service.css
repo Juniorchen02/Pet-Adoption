@@ -29,11 +29,11 @@
   width: 100%;
   height: 100%;
   padding: 2em 1.5em;
-  background: linear-gradient(#fff 50%, rgba(132, 162, 21, 1) 50%);  /* Shortened hex and rgba updated */
+  background: linear-gradient(#fff 0.5, rgba(132, 162, 21, 1) 0.5);  /* Shortened hex and rgba updated */
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 12%);  /* Fixed rgba alpha notation */
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);  /* Fixed rgba alpha notation */
   cursor: pointer;
   transition: 0.5s;
 }

@@ -15,7 +15,7 @@ body {
 .profile-card {
   background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 20%); /* Corrected alpha value to percentage */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Corrected alpha value to percentage */
   padding: 30px;
   text-align: center;
   width: 400px;
