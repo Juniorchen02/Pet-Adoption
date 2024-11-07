@@ -4,9 +4,10 @@ const PetList = ({ pets, onPetClick }) => {
   return (
     <div className='container'>
       {pets.length === 0
-      ? (
-        <p>No pets found.</p>
-      ) : (
+        ? 
+        (
+            <p>No pets found.</p>
+          ) : (
         pets.map((pet) => (
           <div
             key={pet.id}
@@ -18,8 +19,8 @@ const PetList = ({ pets, onPetClick }) => {
               <h3>{pet.name}</h3>
               <p>{pet.description}</p>
             </div>
-          </div>
-        ))
+              </div>
+            ))
       )}
     </div>
   )
