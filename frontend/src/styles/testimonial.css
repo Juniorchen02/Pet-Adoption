@@ -9,14 +9,8 @@
   background-color: yellowgreen;
   padding: 50px 0;
   clip-path:
-<<<<<<< HEAD
   polygon(
     20% 0%,
-=======
-
-    polygon(
-      20% 0%,
->>>>>>> 1d0b4763e34b2a20d902d4db1df9e4cd88518e86
       80% 0%,
       100% 20%,
       100% 80%,
@@ -24,13 +18,8 @@
       20% 100%,
       0% 80%,
       0% 20%
-<<<<<<< HEAD
       );
     }
-=======
-    );
-}
->>>>>>> 1d0b4763e34b2a20d902d4db1df9e4cd88518e86
 
 .testimonial-wrapper {
   width: 100%;
