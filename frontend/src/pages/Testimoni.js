@@ -37,7 +37,7 @@ const testimonials = [
 const TestimonialSlider = () => {
   useEffect(() => {
     const Swiper = window.Swiper
-    new Swiper('.testimonial-slider', {
+    const swiperInstance = new Swiper('.testimonial-slider', {
       grabCursor: true,
       slidesPerView: 2,
       spaceBetween: 30,
@@ -77,13 +77,13 @@ const TestimonialSlider = () => {
                     <p className='testimonial-text'>{testimonial.text}</p>
                     <div className='testimonial-rating'>
                       {[...Array(5)].map((_, starIndex) => (
-                        <i key={starIndex} className='fas fa-star testimonial-star'></i>
+                        <i key={starIndex} className='fas fa-star testimonial-star' />
                       ))}
                     </div>
                   </div>
                 ))}
               </div>
-              <div className='testimonial-pagination swiper-pagination'></div>
+              <div className='testimonial-pagination swiper-pagination' />
             </div>
           </div>
         </div>

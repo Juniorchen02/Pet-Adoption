@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/footer.css';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import '../styles/footer.css'
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           <h1 className='footer-h1'>Adopet</h1>
           <p className='footer-p'>
             Adopet is an animal adoption app created so that everyone can find
-            an animal they love, love and care for wholeheartedly. Where the heart
+            an animal they love, love, and care for wholeheartedly. Where the heart
             grows is where the fun is.
           </p>
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
           <h3>
             Our Office
             <div className='underline'>
-              <span></span>
+              <span />
             </div>
           </h3>
           <p>Medan</p>
@@ -31,7 +31,7 @@ const Footer = () => {
           <h3>
             Links
             <div className='underline'>
-              <span></span>
+              <span />
             </div>
           </h3>
           <ul>
@@ -53,21 +53,21 @@ const Footer = () => {
           <h3>
             Find us
             <div className='underline'>
-              <span></span>
+              <span />
             </div>
           </h3>
           <div className='social-icons'>
-            <i className='fab fa-facebook-f'></i>
-            <i className='fab fa-whatsapp'></i>
-            <i className='fab fa-pinterest'></i>
-            <i className='fab fa-twitter'></i>
+            <i className='fab fa-facebook-f' />
+            <i className='fab fa-whatsapp' />
+            <i className='fab fa-pinterest' />
+            <i className='fab fa-twitter' />
           </div>
         </div>
       </div>
       <hr />
       <p className='footer-copyright'>Adopet @ 2024 - All Rights Reserved</p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

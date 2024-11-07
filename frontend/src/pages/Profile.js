@@ -9,7 +9,7 @@ const Profile = () => {
     const fetchUser = async () => {
       try {
         const response = await fetch('http://localhost:5000/me', {
-          credentials: 'include',
+          credentials: 'include'
         })
 
         if (response.ok) {
@@ -33,7 +33,7 @@ const Profile = () => {
     try {
       const response = await fetch('http://localhost:5000/logout', {
         method: 'DELETE',
-        credentials: 'include',
+        credentials: 'include'
       })
 
       if (response.ok) {

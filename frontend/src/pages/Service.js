@@ -21,7 +21,7 @@ const Service = () => {
           <div className='column-service' key={index}>
             <div className='card-service'>
               <div className='icon-wrapper-service'>
-                <i className={service.icon}></i>
+                <i className={service.icon} />
               </div>
               <h3 className='h3-service'>{service.title}</h3>
               <p className='p-service'>{service.description}</p>

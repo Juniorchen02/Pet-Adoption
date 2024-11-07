@@ -120,10 +120,10 @@ function Pets () {
 
   return (
     <div>
-      <Search searchTerm={searchTerm} onSearchChange={handleSearchChange} className="search-bar" />
-      <div className="main-container">
+      <Search searchTerm={searchTerm} onSearchChange={handleSearchChange} className='search-bar' />
+      <div className='main-container'>
         <Filter selectedTypes={filteredTypes} onFilterChange={handleFilterChange} onReset={resetFilters} />
-        <div className="pet-list">
+        <div className='pet-list'>
           <PetList pets={filteredPets} onPetClick={handlePetClick} />
         </div>
       </div>

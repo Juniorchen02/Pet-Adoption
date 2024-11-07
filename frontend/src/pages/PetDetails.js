@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import Modal from '../components/Modal';
-import '../styles/petdetails.css';
+import React, { useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import Modal from '../components/Modal'
+import '../styles/petdetails.css'
 
 const PetDetails = () => {
   const location = useLocation()
@@ -12,8 +12,7 @@ const PetDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
-    address: '',
-    // Add other necessary fields
+    address: ''
   })
 
   const handleInputChange = (e) => {
@@ -49,7 +48,6 @@ const PetDetails = () => {
           <p>Lokasi: {pet.location}</p>
           <button onClick={() => setIsModalOpen(true)}>Book Now</button>
 
-          {/* Modal for Booking Form */}
           <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
             <h3>Booking Form</h3>
             <form onSubmit={handleSubmit}>
@@ -73,7 +71,6 @@ const PetDetails = () => {
                   required
                 />
               </label>
-              {/* Add other fields as needed */}
               <button type='submit'>Submit Booking</button>
             </form>
           </Modal>
