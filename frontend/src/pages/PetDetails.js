@@ -12,7 +12,7 @@ const PetDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
-    address: ''
+    address: '',
   })
 
   const handleInputChange = (e) => {
@@ -36,10 +36,10 @@ const PetDetails = () => {
   }
 
   return (
-    <div className='pet-details'>
-      <div className='details-container'>
-        <img src={pet.image} alt={pet.name} className='pet-image' />
-        <div className='info-container'>
+    <div className="pet-details">
+      <div className="details-container">
+        <img src={pet.image} alt={pet.name} className="pet-image" />
+        <div className="info-container">
           <h2>{pet.name}</h2>
           <p>{pet.description}</p>
           <p>Tipe: {pet.type}</p>
@@ -54,8 +54,8 @@ const PetDetails = () => {
               <label>
                 Name:
                 <input
-                  type='text'
-                  name='name'
+                  type="text"
+                  name="name"
                   value={formData.name}
                   onChange={handleInputChange}
                   required
@@ -64,14 +64,14 @@ const PetDetails = () => {
               <label>
                 Address:
                 <input
-                  type='text'
-                  name='address'
+                  type="text"
+                  name="address"
                   value={formData.address}
                   onChange={handleInputChange}
                   required
                 />
               </label>
-              <button type='submit'>Submit Booking</button>
+              <button type="submit">Submit Booking</button>
             </form>
           </Modal>
         </div>

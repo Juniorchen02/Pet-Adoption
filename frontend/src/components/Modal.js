@@ -24,43 +24,43 @@ const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null
 
   return (
-    <div className='modal-overlay' onClick={onClose}>
-      <div className='modal-content' onClick={(e) => e.stopPropagation()}>
-        <span className='close-button' onClick={onClose}>
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <span className="close-button" onClick={onClose}>
           &times;
         </span>
 
         {/* Form di dalam modal */}
         <h3>Booking</h3>
         <form onSubmit={handleSubmit}>
-          <div className='form-group'>
-            <label htmlFor='nama'>Nama:</label>
-            <input type='text' id='nama' name='nama' required />
+          <div className="form-group">
+            <label htmlFor="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
           </div>
 
-          <div className='form-group'>
-            <label htmlFor='alamat'>Alamat:</label>
-            <input type='text' id='alamat' name='alamat' required />
+          <div className="form-group">
+            <label htmlFor="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required />
           </div>
 
-          <div className='form-group'>
-            <label htmlFor='kota'>Kota:</label>
-            <input type='text' id='kota' name='kota' required />
+          <div className="form-group">
+            <label htmlFor="kota">Kota:</label>
+            <input type="text" id="kota" name="kota" required />
           </div>
 
-          <div className='form-group'>
-            <label htmlFor='provinsi'>Provinsi:</label>
-            <input type='text' id='provinsi' name='provinsi' required />
+          <div className="form-group">
+            <label htmlFor="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi" required />
           </div>
 
-          <div className='button-container'>
-            <button type='submit'>Submit</button>
+          <div className="button-container">
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
       {showNotification && (
-        <div className='notification-overlay'>
-          <div className='notification-content'>
+        <div className="notification-overlay">
+          <div className="notification-content">
             <span>Pet berhasil diadopsi!</span>
           </div>
         </div>

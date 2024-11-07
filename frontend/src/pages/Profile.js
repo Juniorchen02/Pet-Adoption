@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom'; // for navigation
+import { useNavigate } from 'react-router-dom'; // Ganti useHistory dengan useNavigate
 import '../styles/profile.css'
 
 const Profile = () => {
   const [user, setUser] = useState(null)
   const [message, setMessage] = useState('')
-  const history = useHistory() // useHistory hook for redirection
+  const navigate = useNavigate() // Menggunakan useNavigate hook
 
   useEffect(() => {
     const fetchUser = async () => {
       try {
         const response = await fetch('http://localhost:5000/me', {
-          credentials: 'include',
+          credentials: 'include'
         })
 
         if (response.ok) {
@@ -35,12 +35,12 @@ const Profile = () => {
     try {
       const response = await fetch('http://localhost:5000/logout', {
         method: 'DELETE',
-        credentials: 'include',
+        credentials: 'include'
       })
 
       if (response.ok) {
         setUser(null)
-        history.push('/signin') // Using react-router for navigation
+        navigate('/signin') // Menggunakan navigate untuk melakukan redirection
       } else {
         setMessage('Logout failed. Please try again.')
       }
@@ -66,7 +66,7 @@ const Profile = () => {
         <p><strong>Username:</strong> {user.name}</p>
         <p><strong>Email:</strong> {user.email}</p>
         <button className='btn logout' onClick={handleLogout}>Logout</button>
-        <button className='btn home' onClick={() => history.push('/')}>Home</button> {/* React-router for redirection */}
+        <button className='btn home' onClick={() => navigate('/')}>Home</button> {/* Menggunakan navigate untuk redirection */}
       </div>
     </div>
   )

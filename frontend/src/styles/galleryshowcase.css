@@ -95,32 +95,32 @@
 }
 
 /* Card background images for each card */
-.card-showcase#c1 {
-  background-image: url("/public/images/gallery/cats.jpg");
+.card-showcase[for="c1"] {
+  background-image: url('/public/images/gallery/cats.jpg');
 }
 
-.card-showcase#c2 {
-  background-image: url("/public/images/gallery/dog.jpg");
+.card-showcase[for="c2"] {
+  background-image: url('/public/images/gallery/dog.jpg');
 }
 
-.card-showcase#c3 {
-  background-image: url("/public/images/gallery/bird.jpg");
+.card-showcase[for="c3"] {
+  background-image: url('/public/images/gallery/bird.jpg');
 }
 
-.card-showcase#c4 {
-  background-image: url("/public/images/gallery/rabbit.jpg");
+.card-showcase[for="c4"] {
+  background-image: url('/public/images/gallery/rabbit.jpg');
 }
 
-.card-showcase#c5 {
-  background-image: url("/public/images/gallery/hamster.jpg");
+.card-showcase[for="c5"] {
+  background-image: url('/public/images/gallery/hamster.jpg');
 }
 
-.card-showcase#c6 {
-  background-image: url("/public/images/gallery/monkey.jpg");
+.card-showcase[for="c6"] {
+  background-image: url('/public/images/gallery/monkey.jpg');
 }
 
-.card-showcase#c7 {
-  background-image: url("/public/images/gallery/squirrel.jpg");
+.card-showcase[for="c7"] {
+  background-image: url('/public/images/gallery/squirrel.jpg');
 }
 
 /* Heading text for the gallery showcase */
