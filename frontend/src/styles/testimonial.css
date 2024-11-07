@@ -8,7 +8,9 @@
   width: 100%;
   background-color: yellowgreen;
   padding: 50px 0;
-  clip-path: polygon(
+  clip-path:
+  
+  polygon(
     20% 0%,
     80% 0%,
     100% 20%,
