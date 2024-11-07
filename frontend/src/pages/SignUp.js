@@ -25,9 +25,9 @@ function SignUp () {
           email: email,
           password: password,
           confPassword: confirmPassword,
-          role: 'user',
+          role: 'user'
         }),
-        credentials: 'include',
+        credentials: 'include'
       })
 
       const data = await response.json()
