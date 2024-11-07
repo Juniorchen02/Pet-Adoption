@@ -109,10 +109,12 @@ input[type="checkbox"]:checked::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(
+  background: 
+    linear-gradient(
     #fff 0.5,
     rgba(132 162 21 / 100%) 0.5
-  ); /* 100% opacity instead of 1 */
+  );
+  /* 100% opacity instead of 1 */
   background-size: 100% 200%;
   background-position: 0 2.5%;
   box-shadow: 0 0 35px rgba(0 0 0 / 12%); /* 12% opacity instead of 0.12 */
