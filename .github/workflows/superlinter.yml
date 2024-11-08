@@ -1,5 +1,6 @@
 # NOTE: This would need to be in the root of the repo to use it
 
+
 name: Lint Code Base
 
 on:
