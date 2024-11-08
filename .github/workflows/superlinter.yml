@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-name: Super-Linter
-=======
-# NOTE: This would need to be in the root of the repo to use it
->>>>>>> 952346e2bb88c662a700b2fbd189b0511d1cd7ab
-
-=======
 # NOTE: This would need to be in the root of the repo to use it
 
 
@@ -18,36 +9,12 @@ on:
     
   pull_request:
     branches: [ "alfin" ]
->>>>>>> 1d0b4763e34b2a20d902d4db1df9e4cd88518e86
-
-<<<<<<< HEAD
-jobs:
-  build:
-    name: Lint Code Base
-    runs-on: ubuntu-latest
-<<<<<<< HEAD
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-=======
-name: Lint Code Base
-
-on:
-  push:
-    branches: [ "master" ]
-    
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
   build:
     name: Lint Code Base
     runs-on: ubuntu-latest
->>>>>>> 952346e2bb88c662a700b2fbd189b0511d1cd7ab
 
-=======
-
->>>>>>> 1d0b4763e34b2a20d902d4db1df9e4cd88518e86
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -58,17 +25,6 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
-<<<<<<< HEAD
-<<<<<<< HEAD
+          VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: alfin
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-=======
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> 952346e2bb88c662a700b2fbd189b0511d1cd7ab
-=======
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: "alfin"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
->>>>>>> 1d0b4763e34b2a20d902d4db1df9e4cd88518e86
