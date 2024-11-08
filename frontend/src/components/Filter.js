@@ -1,15 +1,16 @@
-import React from 'react'
+// Filter.js
+import React from 'react';
 
 const Filter = ({ selectedTypes, onFilterChange, onReset }) => {
-  const petTypes = ['Anjing', 'Kelinci', 'Kucing', 'Monyet']
+  const petTypes = ['Anjing', 'Kelinci', 'Kucing', 'Monyet'];
 
   return (
-    <div className='filter-container'>
+    <div className="filter-container">
       <h4>Tipe:</h4>
-      {petTypes.map((type) => (
-        <div key={type} className='filter-item'>
+      {petTypes.map(type => (
+        <div key={type} className="filter-item">
           <input
-            type='checkbox'
+            type="checkbox"
             id={type}
             value={type}
             checked={selectedTypes.includes(type)}
@@ -18,11 +19,9 @@ const Filter = ({ selectedTypes, onFilterChange, onReset }) => {
           <label htmlFor={type}>{type}</label>
         </div>
       ))}
-      <button className='reset-button' onClick={onReset}>
-        Reset
-      </button>
+      <button className="reset-button" onClick={onReset}>Reset</button>
     </div>
-  )
-}
+  );
+};
 
-export default Filter
+export default Filter;

@@ -1,19 +1,21 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import Filter from '../components/Filter'
-import PetList from '../components/PetList'
-import Search from '../components/Search'
-import '../styles/pets.css'
+// Pets.js
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Filter from '../components/Filter';
+import PetList from '../components/PetList';
+import Search from '../components/Search';
+import '../styles/pets.css';
 
+// Data for the pets
 const petsData = [
   {
     type: 'Kucing',
     name: 'Meow',
     description: 'Kucing lucu dan menggemaskan.',
     image: '/images/cat.jpg',
-    age: 2,
-    weight: '4 kg',
-    location: 'Medan'
+    age: 2, // usia dalam tahun
+    weight: '4 kg', // berat
+    location: 'Medan' // lokasi
   },
   {
     type: 'Kucing',
@@ -86,60 +88,53 @@ const petsData = [
     age: 4,
     weight: '7 kg',
     location: 'Lombok'
-  }
-]
+  },
+];
 
-function Pets () {
-  const [searchTerm, setSearchTerm] = useState('')
-  const [filteredTypes, setFilteredTypes] = useState([])
-  const navigate = useNavigate()
+function Pets() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredTypes, setFilteredTypes] = useState([]);
+  const navigate = useNavigate();
 
-  const filteredPets = petsData.filter((pet) => {
-    const matchesSearch = pet.name
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase())
-    const matchesType =
-      filteredTypes.length === 0 || filteredTypes.includes(pet.type)
-    return matchesSearch && matchesType
-  })
+  // Filter pets based on search and type
+  const filteredPets = petsData.filter(pet => {
+    const matchesSearch = pet.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesType = filteredTypes.length === 0 || filteredTypes.includes(pet.type);
+    return matchesSearch && matchesType;
+  });
 
+  // Handle search input change
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value)
-  }
+    setSearchTerm(e.target.value);
+  };
 
+  // Handle filter checkbox change
   const handleFilterChange = (type) => {
-    setFilteredTypes((prev) =>
-      prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
-    )
-  }
+    setFilteredTypes(prev =>
+      prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]
+    );
+  };
 
+  // Reset filters
   const resetFilters = () => {
-    setFilteredTypes([])
-  }
+    setFilteredTypes([]);
+  };
 
   const handlePetClick = (pet) => {
-    navigate(`/pets/${pet.name}`, { state: { pet } })
-  }
+    navigate(`/pets/${pet.name}`, { state: { pet } });
+  };
 
   return (
     <div>
-      <Search
-        searchTerm={searchTerm}
-        onSearchChange={handleSearchChange}
-        className='search-bar'
-      />
-      <div className='main-container'>
-        <Filter
-          selectedTypes={filteredTypes}
-          onFilterChange={handleFilterChange}
-          onReset={resetFilters}
-        />
-        <div className='pet-list'>
+      <Search searchTerm={searchTerm} onSearchChange={handleSearchChange} />
+      <div className="main-container">
+        <Filter selectedTypes={filteredTypes} onFilterChange={handleFilterChange} onReset={resetFilters} />
+        <div className="pet-list">
           <PetList pets={filteredPets} onPetClick={handlePetClick} />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Pets
+export default Pets;

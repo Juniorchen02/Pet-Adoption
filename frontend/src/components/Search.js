@@ -1,16 +1,17 @@
-import React from 'react'
+// Search.js
+import React from 'react';
 
 const Search = ({ searchTerm, onSearchChange }) => {
   return (
-    <div className='search-container'>
+    <div className="search-container">
       <input
-        type='text'
+        type="text"
         value={searchTerm}
         onChange={onSearchChange}
-        placeholder='Cari pet...'
+        placeholder="Cari pet..."
       />
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
