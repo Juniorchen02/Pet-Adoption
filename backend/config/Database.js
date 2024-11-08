@@ -10,5 +10,5 @@ const db = new Sequelize(
         port: process.env.DB_PORT || 3306 // Port (opsional, default ke 3306)
     }
 );
-
+ 
 export default db;
