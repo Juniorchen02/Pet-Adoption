@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  # Database Service
+  db:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: auth_db
+      MYSQL_ROOT_PASSWORD: mysecurepassword123
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+  
+  # Backend Service
+  backend:
+    image: juniorchen02/adoptpet:backend_1.1.0
+    container_name: backend
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: mysecurepassword123
+      DB_NAME: auth_db
+      DB_PORT: 3306
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - app-network
+    restart: always
+  
+  # Frontend Service
+  frontend:
+    image: juniorchen02/adoptpet:frontend_1.1.0
+    container_name: frontend
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  db_data:
