@@ -64,3 +64,70 @@
 .info-container button:active {
   transform: scale(0.95);
 }
+
+/* PetDetails.css */
+
+.pet-details {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.pet-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-container h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #4a7c2e;
+  font-weight: bold;
+}
+
+.info-container p {
+  font-size: 1.2rem;
+  color: #575a7b;
+  line-height: 1.6;
+}
+
+.info-container button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4a7c2e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.info-container button:hover {
+  background-color: #3f6a2a;
+  transform: scale(1.05);
+}
+
+.info-container button:active {
+  transform: scale(0.95);
+}

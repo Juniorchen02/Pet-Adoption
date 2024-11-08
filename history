@@ -1,0 +1,351 @@
+[33mcommit 766d49928c9f2a1fb4eb2abb9273ed1781ef75e6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/alfin[m[33m)[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Sun Nov 3 16:10:06 2024 +0700
+
+    Fixing typo on route
+
+[33mcommit 9bef38042fd2c36e66ef429df12158bdf977b180[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Sun Nov 3 11:53:52 2024 +0700
+
+    push the .gitignore file
+
+[33mcommit ba3e050b2df90bfad883cae7ff0d45453519f54c[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Sun Nov 3 11:53:14 2024 +0700
+
+    Remove node_modules from repo dan update .gitignore
+
+[33mcommit 2d5fec056cffe9a0fba78816f4a98a654f76cd19[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Fri Nov 1 21:47:41 2024 +0700
+
+    Add backend file and fixing some double issue
+
+[33mcommit f7cc87de0231376a1dd3354ab96f9b7bd1867d33[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Fri Nov 1 21:47:09 2024 +0700
+
+    Add the routes
+
+[33mcommit 19e729eed7c08766c325bd745ea0c49b2c7c1527[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Fri Nov 1 21:45:55 2024 +0700
+
+    Add backend and changes fro some files
+
+[33mcommit b2f65438855d177b843ff0bdb1ab8f338fdbbeff[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Fri Nov 1 21:33:55 2024 +0700
+
+    delete not needed video
+
+[33mcommit 59f0df8d3ad22da19f34526f9e8a51d656cf19e7[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Fri Nov 1 19:56:38 2024 +0700
+
+    Memperbaiki folder frontend sebagai bagian dari repository utama
+
+[33mcommit 7a42cd98c8d7eca256c5e49915aa6267919e022d[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Fri Nov 1 19:53:45 2024 +0700
+
+    Atur ulang struktur
+
+[33mcommit 06ebe78e2d1f86bb3e576a637230e6a0aad8a909[m[33m ([m[1;31morigin/juniorchen[m[33m)[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 28 20:19:54 2024 +0700
+
+    update pets and add pet details
+
+[33mcommit 63094a00e75af11fc1f02eb9e439f788deba1191[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:18:02 2024 +0700
+
+    Remove owner.js file
+
+[33mcommit 282cbbeda003d126e182ac693a81d1dc6e3263f9[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:15:28 2024 +0700
+
+    fixing code
+
+[33mcommit 0a1b9e6d327a773e22e226f464c842b3325a5786[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:14:55 2024 +0700
+
+    make styling for team page
+
+[33mcommit 6731374b9e166746c240059fc6559debbf1b5a27[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:14:31 2024 +0700
+
+    fixing and change some style, picture and description
+
+[33mcommit d9f349c260074e0be4efe3673ac77fb1817f172d[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:13:13 2024 +0700
+
+    Change description and fixing
+
+[33mcommit 26100b1f32481d7ff076e8e4801f86ac876c80bd[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:12:38 2024 +0700
+
+    making team page with 3 person
+
+[33mcommit fe3a302d38ee8449b89aa8f9a0029654332daddc[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:12:11 2024 +0700
+
+    Fixing service pages
+
+[33mcommit 582698e4bc77cd45ef7bdf15028925591e88d346[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:11:29 2024 +0700
+
+    Fixing routes for team
+
+[33mcommit 0534e9cd811bff8cd7e19b5ffe01d0c27f1db36f[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:11:07 2024 +0700
+
+    Add team pages into about
+
+[33mcommit 0975114ce7df20dc9a20ee41af1cedd64ebc51bc[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:10:22 2024 +0700
+
+    Navigate to pet and delete 1 button
+
+[33mcommit 8840a9ae6341b8138d29c49ececc7ff8912a9863[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 17:09:45 2024 +0700
+
+    add images
+
+[33mcommit 9a0ceb5ae12a591cd30c4c7295cecc66166efbeb[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:24:10 2024 +0700
+
+    fixing style
+
+[33mcommit d814829bebc0aa302d9382ebf25d004ef8c4da3e[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:20:39 2024 +0700
+
+    style for testimonial page
+
+[33mcommit 020481b3be3887861c546219a6e1e1e9ef1c0242[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:19:03 2024 +0700
+
+    style for about page
+
+[33mcommit 384681954cf645ed5538d96e28f567ac532d2d45[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:17:34 2024 +0700
+
+    make testimonial page
+
+[33mcommit c9c4a8d264150cd0efeeba900c8d2770c07454c3[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:17:08 2024 +0700
+
+    add some path
+
+[33mcommit e78897acaea6ec1c50d1e88042254e535457b9fa[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:16:46 2024 +0700
+
+    change the description
+
+[33mcommit 9fb32d7c3a33ccd41b9e467a0a050a12ff584383[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:16:25 2024 +0700
+
+    make about page
+
+[33mcommit 683f915c9398ca436f75f1b9723a1d6410f0e355[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:15:25 2024 +0700
+
+    adding swiper
+
+[33mcommit 5baf8ff2af926db959293bcd184d532a6a89ee75[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 28 12:11:51 2024 +0700
+
+    add image assets
+
+[33mcommit aa4d9b1d088a3bdefe9a564daede867684851f38[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 22:34:13 2024 +0700
+
+    fixing image directory
+
+[33mcommit 9042ab84fe3e957eb1299d850324af90f22accf4[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 21:35:39 2024 +0700
+
+    fixing merge
+
+[33mcommit 9fefc5b43eac7d65f896e78a46f463a8fe896e11[m
+Merge: 3b2ad62 4bd91ba
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 21:30:53 2024 +0700
+
+    Merge branch 'master' of https://github.com/Juniorchen02/Pet-Adoption
+
+[33mcommit 3b2ad62106a79ff4357099a6bd83666ba90837ef[m
+Merge: 474915a e5f5482
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 21:29:58 2024 +0700
+
+    Merge branch 'alfin' of https://github.com/Juniorchen02/Pet-Adoption
+
+[33mcommit 4bd91ba0a51805fcfb079ee671ca7cbb8aac6ecc[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 21 21:26:56 2024 +0700
+
+    update signin
+
+[33mcommit 474915a81b8d9d8ea8c3442854d60dbe33440269[m
+Merge: d8450f5 f1a1d7e
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 21:07:30 2024 +0700
+
+    Merge branch 'master' of https://github.com/Juniorchen02/Pet-Adoption
+
+[33mcommit f1a1d7ee9c1513a44b607d482025928400d299ec[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 21 20:31:44 2024 +0700
+
+    merge
+
+[33mcommit 34cb0cd13cc0e5174f8faae924ca6c28bbc35902[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 21 20:28:03 2024 +0700
+
+    update sign in, sign up, and pets page
+
+[33mcommit 5111a690d0ff33095ee260569b2a5c85d8c63183[m
+Merge: 12053b9 2cd933d
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Mon Oct 21 19:49:22 2024 +0700
+
+    Merge branch 'master' of https://github.com/Juniorchen02/Pet-Adoption into juniorchen
+
+[33mcommit e5f5482c48145a6c8c7e0359598f736fde03e1c2[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 16:46:35 2024 +0700
+
+    update and fixing css, style and images
+
+[33mcommit fa0e3e4a756444b90ae0a2a97532ab6861a17576[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 16:44:55 2024 +0700
+
+    Create service page
+
+[33mcommit 9701aadf07909bc7b14fbbbf0b0b986f75b5cfd6[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 16:44:28 2024 +0700
+
+    updating routes
+
+[33mcommit 92c57da8266c57f8e03ef3ab3731369ea2206990[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 16:44:05 2024 +0700
+
+    changing image, description and pet name
+
+[33mcommit 0f59e420253c120b3a0dbea284c55952cfb6dfdd[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 16:43:32 2024 +0700
+
+    add and updating all images
+
+[33mcommit d8450f520907b81c4950259e8d0b9c0a026918d7[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Mon Oct 21 16:41:48 2024 +0700
+
+    Fixing Icon
+
+[33mcommit 2cd933d56063bb4a93d0baf3236d28246140d787[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:15:20 2024 +0700
+
+    update and fixing
+
+[33mcommit 485de6e8ec47e6ade546290bd9182c66b5872f24[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:14:43 2024 +0700
+
+    Update the file and adding css
+
+[33mcommit b3f71a4540d4f0f3d47a33d45215ed5f3aa676ca[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:13:32 2024 +0700
+
+    Adding css for footer, header, navbar and gallery
+
+[33mcommit afe62b84fee52ad9140fc03e96806d123472f5cc[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:12:13 2024 +0700
+
+    adding Home pages
+
+[33mcommit bc4349f5a58baed7b7f2a6caa7927383fe40fb85[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:11:38 2024 +0700
+
+    add galleryshow for home pages
+
+[33mcommit cf426bcb96b2be8534e0b3fdcb230af89a4f52f2[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:09:25 2024 +0700
+
+    Make the needed file for pages
+
+[33mcommit bc7921de8cc2ab61e8cc921e0b358800afd7af7c[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:07:42 2024 +0700
+
+    wallpaper for header
+
+[33mcommit a4e99d8d3a64eafef01d15dee27f20c4bb153ee6[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:06:22 2024 +0700
+
+    Make the navbar design
+
+[33mcommit 12053b908b34e1f53aa932565e6f94a5eed7ad5a[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Thu Oct 17 20:06:04 2024 +0700
+
+    junior test
+
+[33mcommit 4aa58e5bb421614dfe7672af32fa6af608fbe809[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:05:38 2024 +0700
+
+    Header design
+
+[33mcommit 95551e77e4f212ee23acfeac7478cc34cdecd957[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 20:02:31 2024 +0700
+
+    footer design
+
+[33mcommit 1af01f5e8f299ad969de479189793bf383c23513[m
+Author: Alfin Tan <alfin6010@gmail.com>
+Date:   Thu Oct 17 19:56:55 2024 +0700
+
+    Adding font-awesome dependency
+
+[33mcommit 2e7619d048186250c9742c88fe9cd95fd250359b[m
+Author: Juniorchen02 <chen.junior20@gmail.com>
+Date:   Thu Oct 17 18:02:45 2024 +0700
+
+    Initialize project using Create React App
