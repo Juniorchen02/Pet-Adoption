@@ -5,7 +5,7 @@ Ada dua cara untuk menarik Docker dan menjalankannya:
 ## 1. Dengan cara cloning repository master
 - Buka link berikut [GitHub Repository](https://github.com/Juniorchen02/Pet-Adoption/).
 - Lalu tekan Code dan di bagian HTTPS terdapat link seperti berikut: [https://github.com/Juniorchen02/Pet-Adoption.git](https://github.com/Juniorchen02/Pet-Adoption.git). Salin link tersebut.
-- Buat satu folder baru di Visual Studio Code, kemudian buka terminal dan jalankan: 
+- Buat satu folder baru di Visual Studio Code, kemudian buka terminal dan jalankan:
 ```bash
 git clone https://github.com/Juniorchen02/Pet-Adoption.git
 ```
