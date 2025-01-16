@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Pet Adoption - Cara Menjalankan Docker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ada dua cara untuk menarik Docker dan menjalankannya:
 
-## Available Scripts
+## 1. Dengan cara cloning repository master
+- Buka link berikut [GitHub Repository](https://github.com/Juniorchen02/Pet-Adoption/).
+- Lalu tekan Code dan di bagian HTTPS terdapat link seperti berikut: [https://github.com/Juniorchen02/Pet-Adoption.git](https://github.com/Juniorchen02/Pet-Adoption.git). Salin link tersebut.
+- Buat satu folder baru di Visual Studio Code, kemudian buka terminal dan jalankan:
+```bash
+git clone https://github.com/Juniorchen02/Pet-Adoption.git
+```
+- Setelah repository ter-cloning, masuk ke folder yang sedang dibuka saat ini.
+- Setelah cloning selesai, masuk ke folder root terlebih dahulu dengan perintah:
+```bash
+cd pet-adoption
+```
+- Di terminal, jalankan:
+```bash
+docker-compose up
+```
+Tunggu sampai MySQL, backend, dan frontend berhasil dibuat dan berjalan.
+- Jika MySQL, backend, dan frontend telah berjalan, container yang telah dibangun dapat diakses di [http://localhost:3000](http://localhost:3000).
 
-In the project directory, you can run:
+## 2. Dengan cara pull images frontend dan backend dari Docker Hub
+- Buka link berikut [Docker Hub Repository](https://hub.docker.com/r/juniorchen02/adoptpet/tags).
+- Terdapat 2 versi pada bagian frontend dan backend, yaitu versi 1.0.0 dan 1.1.0. Versi 1.0.0 adalah versi container sebelum penambahan fitur, dan versi 1.1.0 adalah versi container setelah penambahan fitur.
+- Misalnya versi yang akan digunakan adalah versi 1.0.0, pertama-tama pull frontend dan backend dengan versi 1.0.0 terlebih dahulu dari Docker.
+- Buat satu folder baru di Visual Studio Code, kemudian buka terminal dan jalankan:
+```bash
+docker pull juniorchen02/adoptpet:frontend_1.0.0
+```
+Tunggu sampai images frontend berhasil ditarik.
+- Kemudian, jalankan:
+```bash
+docker pull juniorchen02/adoptpet:backend_1.0.0
+```
+Tunggu sampai images backend berhasil ditarik.
+- Setelah kedua images berhasil ditarik, buat file dengan nama `docker-compose.yml`. Isi dari `docker-compose.yml` ini dapat diambil dari GitHub pada link berikut: [docker-compose.yml](https://github.com/Juniorchen02/Pet-Adoption/blob/master/docker-compose.yml).
+- Setelah itu, di terminal jalankan:
+```bash
+docker-compose up
+```
+Tunggu sampai MySQL, backend, dan frontend berhasil dibuat dan berjalan.
+- Jika MySQL, backend, dan frontend telah berjalan, container yang telah dibangun dapat diakses di [http://localhost:3000](http://localhost:3000).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Penting**: Sebelum menjalankan container yang telah di-cloning atau di-pull dari images di Docker Hub, pastikan frontend, backend, dan MySQL tidak dalam keadaan berjalan.
