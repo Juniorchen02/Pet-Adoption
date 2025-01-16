@@ -1,10 +1,8 @@
-version: '3.8'
-
 services:
   # Database Service
   db:
     image: mysql:8
-    container_name: mysql
+    container_name: mysql8
     environment:
       MYSQL_DATABASE: auth_db
       MYSQL_ROOT_PASSWORD: mysecurepassword123
@@ -22,8 +20,8 @@ services:
   
   # Backend Service
   backend:
-    image: juniorchen02/adoptpet:backend_1.1.0
-    container_name: backend
+    image: juniorchen02/adoptpet:backend_2.3.1
+    container_name: backend8
     build:
       context: ./backend
     ports:
@@ -43,8 +41,8 @@ services:
   
   # Frontend Service
   frontend:
-    image: juniorchen02/adoptpet:frontend_1.1.0
-    container_name: frontend
+    image: juniorchen02/adoptpet:frontend_2.3.0
+    container_name: frontend8
     build:
       context: ./frontend
     ports:

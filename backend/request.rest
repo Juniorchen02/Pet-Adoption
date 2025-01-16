@@ -4,9 +4,9 @@ Content-Type: application/json
 
 {
     "name": "Alfin1234",
-    "email": "alfintest123@gmail.com",
-    "password": "alfin123",
-    "confPassword": "alfin123",
+    "email": "alfintest1234@gmail.com",
+    "password": "alfin1234",
+    "confPassword": "alfin1234",
     "role": "user"
 }
 
@@ -16,11 +16,11 @@ GET http://localhost:5000/users
 
 ###
 // Get Single User
-GET http://localhost:5000/users/8c48294d-a67d-4631-8b87-6a9c40b0a8ba
+GET http://localhost:5000/users/ec04a56b-11b0-4f40-94a0-91c10e778cae
 
 ###
 // Update a user
-PATCH http://localhost:5000/users/8c48294d-a67d-4631-8b87-6a9c40b0a8ba
+PATCH http://localhost:5000/users/ec04a56b-11b0-4f40-94a0-91c10e778cae
 Content-Type: application/json
 
 {

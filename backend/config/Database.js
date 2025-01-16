@@ -13,9 +13,9 @@ const db = new Sequelize(
  
 export default db;
 
-// import { Sequelize } from "sequelize";
+// import * as sequelize from "sequelize";
  
-// const db = new Sequelize('auth_db', 'root', '', {
+// const db = new sequelize.Sequelize('auth_db', 'root', '', {
 //     host: "localhost",
 //     dialect: "mysql"
 // });

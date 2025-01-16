@@ -26,7 +26,7 @@ function SignIn() {
       if (response.ok) {
         setMessage("Login successful!");
         // Navigate to profile
-        navigate("/profile");
+        navigate("/");
       } else {
         setMessage(data.msg || "Login failed. Please try again.");
       }

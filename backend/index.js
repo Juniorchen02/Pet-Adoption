@@ -4,13 +4,13 @@ import dotenv from "dotenv";
 import express from "express";
 import session from "express-session";
 import db from "./config/Database.js";
+import "./models/PetModel.js";
 import "./models/ProductModel.js";
 import "./models/UsersModel.js";
-import "./models/PetModel.js";
 import AuthRoute from "./routes/AuthRoute.js";
+import PetRoute from "./routes/PetRoute.js";
 import ProductRoute from "./routes/ProductRoute.js";
 import UserRoute from "./routes/UserRoute.js";
-import PetRoute from "./routes/PetRoute.js";
 dotenv.config();
 
 const app = express();
@@ -41,13 +41,35 @@ app.use(session({
     saveUninitialized: true,
     store: store,
     cookie: {
-        secure: 'auto'
+        httpOnly: true,
+        sameSite: 'lax',
+        secure: 'true'
     }
     
 }))
+
+// Izinkan beberapa saja
+
+// app.use(cors({
+//     credentials: true,
+//     origin: (origin, callback) => {
+//         if (
+//             !origin || 
+//             /^(http:\/\/127\.0\.0\.1:\d{1,5})$/.test(origin) || // Izinkan semua port localhost
+//             /^(http:\/\/localhost:\d{1,5})$/.test(origin) ||    // Izinkan semua port localhost
+//             /^http:\/\/.*:\d{1,5}$/.test(origin)                // Izinkan semua alamat IP dengan port
+//         ) {
+//             callback(null, true);
+//         } else {
+//             callback(new Error('Not allowed by CORS'));
+//         }
+//     }
+// }));
+
+// Izinkan semua
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:3000'
+    origin: true
 }));
 
 app.use(express.json());
@@ -59,5 +81,5 @@ app.use(PetRoute);
 store.sync();
 
 app.listen(process.env.APP_PORT, ()=> {
-    console.log('Server up and running');
+    console.log('Server up and running');
 });

@@ -11,10 +11,10 @@ import { verifyUser } from "../middleware/AuthUser.js";
 
 const router = express.Router();
 
-router.get('/pets', verifyUser, getPets);
-router.get('/pet/:id', verifyUser, getPetById);
+router.get('/pets', getPets);
+router.get('/pet/:id', getPetById);
 router.get('/pet-types', getPetTypes);
-router.post('/pets/', verifyUser, createPet);
+router.post('/pets/', createPet);
 router.patch('/pet/:id', updatePet);
 router.delete('/pet/:id', deletePet);
 
