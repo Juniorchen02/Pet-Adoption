@@ -23,20 +23,6 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: NodePort
-  ports:
-  - protocol: TCP
-    port: 3000
-    targetPort: 3000
-    nodePort: 30050
-  selector:
-    app: frontend
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: frontend
-spec:
   type: NodePort  # Mengubah tipe menjadi NodePort
   ports:
   - port: 3000
