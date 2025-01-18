@@ -1,0 +1,23 @@
+name: Build and Push Docker Images to DockerHub
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - '.github/workflows/ci_cd.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build ./frontend --file ./frontend/Dockerfile --tag juniorchen02/adoptpet:frontend_2.3.1
+    - name: Login to DockerHub
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_TOKEN }}
+      run: |
+        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+    - name: Push image to DockerHub
+      run: docker push juniorchen02/adoptpet:frontend_2.3.1
