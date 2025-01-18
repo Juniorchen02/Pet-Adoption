@@ -30,4 +30,3 @@ jobs:
         kubectl port-forward svc/argocd-server -n argocd 8080:443 &  # Ensure Argo CD server is running
         sleep 5  # Wait for port-forward to be ready
         argocd login localhost:8080 --username admin --password ${{ secrets.ARGO_CD_PASSWORD }} --insecure
-        argocd app sync adoptpet  # Menyinkronkan aplikasi dengan Argo CD
