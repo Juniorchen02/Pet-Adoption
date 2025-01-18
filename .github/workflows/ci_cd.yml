@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag juniorchen02/adoptpet:frontend_2.3.1
+      run: docker build ./frontend --file ./frontend/Dockerfile --tag juniorchen02/adoptpet:frontend_2.3.1
     - name: Push image to DockerHub
       run: |
         docker login -u juniorchen02 -p ${{ secrets.DOCKER_HUB_TOKEN }}
