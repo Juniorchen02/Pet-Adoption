@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: adoptpet
+  namespace: argocd
+spec:
+  project: default  # Menyertakan proyek default
+  destination:
+    name: ''
+    namespace: default  # Ganti dengan namespace target Anda
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: 'https://github.com/juniorchen02/adoptpet.git'  # URL repo Git Anda
+    targetRevision: master  # Branch yang digunakan
+    path: k8s  # Folder path yang berisi file k8s (seperti back-deploy.yaml, front-deploy.yaml, dll.)
+  syncPolicy:
+    automated:
+      prune: true  # Untuk menghapus resource yang sudah tidak ada di repository
+      selfHeal: true  # Memperbaiki konfigurasi yang terdeviasi
+    syncOptions:
+      - Validate=false
