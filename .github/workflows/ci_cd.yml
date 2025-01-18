@@ -21,9 +21,13 @@ jobs:
         echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
     - name: Push image to DockerHub
       run: docker push juniorchen02/adoptpet:frontend_2.3.1
+    - name: Install Argo CD CLI
+      run: |
+        curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.8.1/argocd-linux-amd64
+        chmod +x /usr/local/bin/argocd
     - name: Trigger Argo CD Sync
       run: |
-        kubectl port-forward svc/argocd-server -n argocd 8080:443 &  # Pastikan Argo CD server berjalan
-        sleep 5  # Tunggu hingga port-forward siap
+        kubectl port-forward svc/argocd-server -n argocd 8080:443 &  # Ensure Argo CD server is running
+        sleep 5  # Wait for port-forward to be ready
         argocd login localhost:8080 --username admin --password ${{ secrets.ARGO_CD_PASSWORD }} --insecure
         argocd app sync adoptpet  # Menyinkronkan aplikasi dengan Argo CD
