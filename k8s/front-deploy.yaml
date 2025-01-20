@@ -19,11 +19,11 @@ spec:
         - containerPort: 3000
         resources:
           requests:
-            memory: 256Mi
-            cpu: 200m
+            cpu: "500m"
+            memory: "256Mi"
           requests:
-            memory: 512Mi
-            cpu: 400m
+            cpu: "1"
+            memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -34,6 +34,6 @@ spec:
   ports:
   - port: 3000
     targetPort: 3000
-    nodePort: 30002  # Anda dapat menentukan port NodePort secara manual, atau biarkan kosong untuk memilih secara otomatis
+    nodePort: 30004  # Anda dapat menentukan port NodePort secara manual, atau biarkan kosong untuk memilih secara otomatis
   selector:
     app: frontend
