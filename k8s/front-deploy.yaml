@@ -17,6 +17,13 @@ spec:
         image: juniorchen02/adoptpet:frontend_2.3.0
         ports:
         - containerPort: 3000
+        resources:
+          requests:
+            memory: 256Mi
+            cpu: 200m
+          requests:
+            memory: 512Mi
+            cpu: 400m
 ---
 apiVersion: v1
 kind: Service
